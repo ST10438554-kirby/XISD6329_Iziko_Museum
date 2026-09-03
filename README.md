@@ -6,7 +6,7 @@ XISD6329_Task 1
 ## Mobile App
 ## Technology Mobile App
 ## Main features
-## Setup in (app anme )
+## Setup in 
 
 ## Website 
 ASP.NET Core MVC website created using Visual Studio 2022
