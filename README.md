@@ -1,4 +1,4 @@
-## XISD6329_Iziko_Museum
+# XISD6329 Task 1
 # Iziko Museum Digital Art Gallery -  Website and Mobile App
 
 ## Mobile App
