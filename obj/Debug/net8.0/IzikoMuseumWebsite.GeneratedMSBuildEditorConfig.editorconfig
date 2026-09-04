@@ -1,0 +1,104 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = IzikoMuseumWebsite
+build_property.RootNamespace = IzikoMuseumWebsite
+build_property.ProjectDir = C:\Users\rafiq\OneDrive\Desktop\IzikoMuseumWebsite\IzikoMuseumWebsite\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rafiq\OneDrive\Desktop\IzikoMuseumWebsite\IzikoMuseumWebsite
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Artists/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Artists/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Artist/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Artist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Artworks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0d29ya3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Artworks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0d29ya3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Favourites/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Multimedia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGltZWRpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/QR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rafiq/OneDrive/Desktop/IzikoMuseumWebsite/IzikoMuseumWebsite/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jfep26ybj6
