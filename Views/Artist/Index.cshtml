@@ -1,0 +1,189 @@
+﻿@model IEnumerable<IzikoMuseumWebsite.Models.Artist>
+
+@{
+    ViewData["Title"] = "Artists";
+}
+
+<style>
+    .artists-page {
+        padding: 50px 20px;
+        background: #f8f5ef;
+        min-height: 100vh;
+    }
+
+    .artists-header {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+        .artists-header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #2d241f;
+            margin-bottom: 12px;
+        }
+
+        .artists-header p {
+            color: #6f6259;
+            font-size: 17px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+    .artists-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .artist-card {
+        background: white;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .artist-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.14);
+        }
+
+    .artist-image {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+        background: #e9e4dc;
+    }
+
+    .artist-content {
+        padding: 24px;
+    }
+
+        .artist-content h2 {
+            color: #2d241f;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+    .artist-nationality {
+        color: #8a7566;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .artist-bio {
+        color: #5e554f;
+        line-height: 1.6;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .view-artist-btn {
+        display: inline-block;
+        padding: 11px 20px;
+        border-radius: 25px;
+        background: #2d241f;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+        .view-artist-btn:hover {
+            background: #8a7566;
+            color: white;
+        }
+
+    .no-artists {
+        text-align: center;
+        padding: 60px;
+        color: #6f6259;
+    }
+</style>
+
+<div class="artists-page">
+
+    <div class="artists-header">
+        <h1>Artists</h1>
+
+        <p>
+            Discover the artists whose work forms part of South Africa's
+            rich artistic and cultural heritage.
+        </p>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="artists-grid">
+
+            @foreach (var artist in Model)
+            {
+                <div class="artist-card">
+
+                    @if (!string.IsNullOrEmpty(artist.ImageUrl))
+                    {
+                        <img src="@artist.ImageUrl"
+                             alt="@artist.Name"
+                             class="artist-image" />
+                    }
+                    else
+                    {
+                        <div class="artist-image"
+                             style="display:flex; align-items:center; justify-content:center;">
+                            <span>Artist Image</span>
+                        </div>
+                    }
+
+                    <div class="artist-content">
+
+                        <h2>@artist.Name</h2>
+
+                        @if (!string.IsNullOrEmpty(artist.Nationality))
+                        {
+                            <div class="artist-nationality">
+                                @artist.Nationality
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrEmpty(artist.Biography))
+                        {
+                            <p class="artist-bio">
+                                @{
+                                    var biography = artist.Biography;
+
+                                    if (biography.Length > 180)
+                                    {
+                                        biography = biography.Substring(0, 180) + "...";
+                                    }
+                                }
+
+                                @biography
+                            </p>
+                        }
+
+                        <a asp-controller="Artist"
+                           asp-action="Details"
+                           asp-route-id="@artist.ArtistId"
+                           class="view-artist-btn">
+                            View Artist
+                        </a>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    }
+    else
+    {
+        <div class="no-artists">
+            <h3>No artists found.</h3>
+            <p>Please add artist records to the database.</p>
+        </div>
+    }
+
+</div>

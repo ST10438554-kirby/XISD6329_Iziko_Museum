@@ -1,0 +1,880 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- ============================= -->
+<!-- HERO SECTION -->
+<!-- ============================= -->
+
+<section class="museum-hero">
+
+    <div class="hero-overlay">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    WELCOME TO 
+                </p>
+
+                <h1>
+                    The Iziko 
+                    <span>Art Gallery</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover South African, African and International
+                    art in the heart of Cape Town.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a asp-controller="Artworks"
+                       asp-action="Index"
+                       class="museum-btn primary-btn">
+
+                        Explore Artworks
+
+                    </a>
+
+                    <a href="#visit"
+                       class="museum-btn secondary-btn">
+
+                        Plan Your Visit
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- WELCOME SECTION -->
+<!-- ============================= -->
+
+<section class="welcome-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>DISCOVER • EXPERIENCE • LEARN</span>
+
+            <h2>
+                Welcome to the Iziko Art Gallery
+            </h2>
+
+        </div>
+
+
+        <div class="welcome-grid">
+
+            <div class="welcome-text">
+
+                <p>
+                    The renowned public art museum in the Mother City
+                    is home to a sizable and fascinating collection of
+                    South African, African, and international historical,
+                    modern, and contemporary artworks.
+                </p>
+
+                <p>
+                    To enable the museum to provide a comprehensive
+                    program of temporary exhibitions of paintings,
+                    works on paper, photography, sculpture, beadwork,
+                    textiles, and architecture, selections from the
+                    Permanent Collection are rotated on a regular basis.
+                </p>
+
+                <p>
+                    These exhibitions reveal the remarkable variety
+                    of artistic expression in South Africa, across the
+                    African continent and beyond.
+                </p>
+
+                <a asp-controller="Artworks"
+                   asp-action="Index"
+                   class="text-link">
+
+                    Explore the Collection →
+
+                </a>
+
+            </div>
+
+
+            <div class="welcome-highlight">
+
+                <div class="highlight-icon">
+                    🖼️
+                </div>
+
+                <h3>
+                    A World of Art
+                </h3>
+
+                <p>
+                    Explore historical, modern and contemporary
+                    artworks from South Africa, Africa and beyond.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- QUICK INFORMATION -->
+<!-- ============================= -->
+
+<section class="quick-info-section">
+
+    <div class="container">
+
+        <div class="info-cards">
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🕐
+                </div>
+
+                <h3>Opening Hours</h3>
+
+                <p>
+                    Monday – Sunday
+                </p>
+
+                <strong>
+                    09h00 – 17h00
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🎟️
+                </div>
+
+                <h3>Admission</h3>
+
+                <p>
+                    Local adults
+                </p>
+
+                <strong>
+                    R60
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    📍
+                </div>
+
+                <h3>Location</h3>
+
+                <p>
+                    Government Avenue
+                </p>
+
+                <strong>
+                    Company's Garden
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    🎨
+                </div>
+
+                <h3>Explore</h3>
+
+                <p>
+                    Discover artworks
+                </p>
+
+                <strong>
+                    Online Collection
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- VISIT SECTION -->
+<!-- ============================= -->
+
+<section id="visit" class="visit-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>PLAN YOUR VISIT</span>
+
+            <h2>
+                Hours, Fees & Visitor Information
+            </h2>
+
+            <p>
+                Everything you need to plan your visit to the gallery.
+            </p>
+
+        </div>
+
+
+        <div class="visit-grid">
+
+            <!-- HOURS -->
+
+            <div class="visit-card">
+
+                <div class="visit-card-icon">
+                    🕐
+                </div>
+
+                <h3>
+                    Hours
+                </h3>
+
+                <div class="visit-card-content">
+
+                    <h4>
+                        Winter Weekend Hours
+                    </h4>
+
+                    <p>
+                        <strong>Saturdays:</strong>
+                        08h30 – 16h00
+                    </p>
+
+                    <p>
+                        <strong>Sundays:</strong>
+                        08h30 – 16h00
+                    </p>
+
+                    <hr />
+
+                    <p>
+                        <strong>Monday – Sunday:</strong>
+                        09h00 – 17h00
+                    </p>
+
+                    <p class="small-note">
+                        Closed on Christmas Day and Workers' Day.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- INTERNATIONAL FEES -->
+
+            <div class="visit-card">
+
+                <div class="visit-card-icon">
+                    🌍
+                </div>
+
+                <h3>
+                    International Fee
+                </h3>
+
+                <div class="price-list">
+
+                    <div>
+                        <span>Adults</span>
+                        <strong>R100</strong>
+                    </div>
+
+                    <div>
+                        <span>Children aged 5–17</span>
+                        <strong>R100</strong>
+                    </div>
+
+                    <div>
+                        <span>Pensioners & Students</span>
+                        <strong>R100</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOCAL FEES -->
+
+            <div class="visit-card">
+
+                <div class="visit-card-icon">
+                    🇿🇦
+                </div>
+
+                <h3>
+                    Local Fee
+                </h3>
+
+                <div class="price-list">
+
+                    <div>
+                        <span>Adults</span>
+                        <strong>R60</strong>
+                    </div>
+
+                    <div>
+                        <span>Children aged 5–17</span>
+                        <strong>R40</strong>
+                    </div>
+
+                    <div>
+                        <span>South African pensioners</span>
+                        <strong>R40</strong>
+                    </div>
+
+                    <div>
+                        <span>Students with valid cards</span>
+                        <strong>R40</strong>
+                    </div>
+
+                </div>
+
+                <p class="free-entry">
+                    Free entry on Fridays
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- TICKETS -->
+
+        <div class="ticket-box">
+
+            <div>
+
+                <span>
+                    READY TO VISIT?
+                </span>
+
+                <h3>
+                    Get your tickets online
+                </h3>
+
+            </div>
+
+            <a href="https://www.webtickets.co.za/v2/event.aspx?itemid=1527309559"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="museum-btn primary-btn">
+
+                Get Your Tickets
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- EDUCATION PROGRAMMES -->
+<!-- ============================= -->
+
+<section class="education-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>LEARN WITH IZIKO</span>
+
+            <h2>
+                Education Programme Fees
+            </h2>
+
+            <p>
+                Educational opportunities for learners, schools,
+                organisations and the wider community.
+            </p>
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table class="education-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Programme
+                        </th>
+
+                        <th>
+                            Fee
+                        </th>
+
+                        <th>
+                            Unit
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Planetarium school shows
+                        </td>
+
+                        <td>
+                            R40
+                        </td>
+
+                        <td>
+                            Per learner
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Booked school groups
+                            <br />
+                            <small>
+                                Museum lesson with museum educator
+                            </small>
+                        </td>
+
+                        <td>
+                            R40
+                        </td>
+
+                        <td>
+                            Per learner
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Booked school groups
+                            <br />
+                            <small>
+                                Museum lesson without museum educator
+                            </small>
+                        </td>
+
+                        <td>
+                            R20
+                        </td>
+
+                        <td>
+                            Per learner
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Unbooked school groups
+                            <br />
+                            <small>
+                                Museum lesson without museum educator
+                            </small>
+                        </td>
+
+                        <td>
+                            R30
+                        </td>
+
+                        <td>
+                            Per learner
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Guided tours
+                        </td>
+
+                        <td>
+                            R110
+                        </td>
+
+                        <td>
+                            Per person
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Mobile Museum to schools
+                        </td>
+
+                        <td>
+                            R260
+                        </td>
+
+                        <td>
+                            Per visit
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Outreach programmes to festivals
+                        </td>
+
+                        <td>
+                            R290
+                        </td>
+
+                        <td>
+                            Per day
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Public programmes
+                        </td>
+
+                        <td>
+                            Free
+                        </td>
+
+                        <td>
+                            —
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="commemorative-box">
+
+            🎉
+
+            <strong>
+                Free entry on commemorative days
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- CONTACT + MAP -->
+<!-- ============================= -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <!-- CONTACT -->
+
+            <div class="contact-card">
+
+                <span>
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Contact Details
+                </h2>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ☎️
+                    </div>
+
+                    <div>
+
+                        <small>
+                            Telephone
+                        </small>
+
+                        <p>
+                            +27 (0) 21 481 3970
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <small>
+                            Location
+                        </small>
+
+                        <p>
+                            Government Avenue,
+                            Company's Garden,
+                            Cape Town
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Iziko+South+African+National+Gallery+Cape+Town"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="museum-btn primary-btn">
+
+                    📍 Open in Google Maps
+
+                </a>
+
+            </div>
+
+
+            <!-- MAP -->
+            <div class="map-container">
+
+                <iframe src="https://www.google.com/maps?q=Iziko+South+African+National+Gallery+Cape+Town&output=embed"
+                        width="600"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- FUN FACTS -->
+<!-- ============================= -->
+
+<section class="facts-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>DID YOU KNOW?</span>
+
+            <h2>
+                Fun Facts About Iziko
+            </h2>
+
+            <p>
+                Discover a few interesting facts before your visit.
+            </p>
+
+        </div>
+
+
+        <div class="facts-grid">
+
+
+            <div class="fact-card">
+
+                <div class="fact-number">
+                    01
+                </div>
+
+                <div class="fact-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    In the Mother City
+                </h3>
+
+                <p>
+                    The gallery is located in Cape Town,
+                    one of South Africa's most culturally rich cities.
+                </p>
+
+            </div>
+
+
+            <div class="fact-card">
+
+                <div class="fact-number">
+                    02
+                </div>
+
+                <div class="fact-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Diverse Art Collection
+                </h3>
+
+                <p>
+                    The collection includes South African,
+                    African and international artworks.
+                </p>
+
+            </div>
+
+
+            <div class="fact-card">
+
+                <div class="fact-number">
+                    03
+                </div>
+
+                <div class="fact-icon">
+                    🖌️
+                </div>
+
+                <h3>
+                    Many Art Forms
+                </h3>
+
+                <p>
+                    Exhibitions can feature paintings,
+                    photography, sculpture, textiles,
+                    beadwork and architecture.
+                </p>
+
+            </div>
+
+
+            <div class="fact-card">
+
+                <div class="fact-number">
+                    04
+                </div>
+
+                <div class="fact-icon">
+                    🌍
+                </div>
+
+                <h3>
+                    Art Without Borders
+                </h3>
+
+                <p>
+                    The gallery provides an opportunity to
+                    experience artistic expression from
+                    South Africa, Africa and beyond.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================= -->
+<!-- FINAL CTA -->
+<!-- ============================= -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <h2>
+            Discover Something Extraordinary
+        </h2>
+
+        <p>
+            Explore the collection and discover the stories
+            behind the artworks and artists.
+        </p>
+
+        <a asp-controller="Artworks"
+           asp-action="Index"
+           class="museum-btn light-btn">
+
+            Explore Artworks →
+
+        </a>
+
+    </div>
+
+</section>

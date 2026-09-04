@@ -1,0 +1,80 @@
+﻿@model IEnumerable<IzikoMuseumWebsite.Models.Artist>
+
+@{
+    ViewData["Title"] = "Artists";
+}
+
+<section class="artists-page">
+
+    <div class="artists-header">
+        <div class="eyebrow">IZIKO ART GALLERY</div>
+
+        <h1>Artists</h1>
+
+        <p>
+            Discover the artists whose work forms an important part
+            of South Africa's artistic and cultural history.
+        </p>
+    </div>
+
+    <div class="artist-grid">
+
+        @foreach (var artist in Model)
+        {
+            <article class="artist-card">
+
+                <div class="artist-image">
+
+                    @if (!string.IsNullOrEmpty(artist.ImageUrl))
+                    {
+                        <img src="@artist.ImageUrl"
+                             alt="@artist.Name" />
+                    }
+                    else
+                    {
+                        <div class="artist-placeholder">
+                            <span>IMAGE</span>
+                            <small>Artist photograph</small>
+                        </div>
+                    }
+
+                </div>
+
+                <div class="artist-content">
+
+                    <div class="artist-category">
+                        ARTIST
+                    </div>
+
+                    <h2>@artist.Name</h2>
+
+                    @if (!string.IsNullOrEmpty(artist.Biography))
+                    {
+                        <p>
+                            @if (artist.Biography.Length > 250)
+                            {
+                                @artist.Biography.Substring(0, 250)
+                                <text>...</text>
+                            }
+                            else
+                            {
+                                @artist.Biography
+                            }
+                        </p>
+                    }
+
+                    <a asp-controller="Artist"
+                       asp-action="Details"
+                       asp-route-id="@artist.ArtistId"
+                       class="artist-button">
+                        View Artist
+                    </a>
+
+                </div>
+
+            </article>
+        }
+
+    </div>
+
+</section>

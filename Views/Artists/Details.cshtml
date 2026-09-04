@@ -1,0 +1,339 @@
+﻿@{
+    ViewData["Title"] = "Artist Details";
+}
+
+<div class="artist-details-page">
+
+    <!-- HERO SECTION -->
+
+    <section class="artist-details-hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- ARTIST IMAGE -->
+
+                <div class="col-lg-5 mb-4 mb-lg-0">
+
+                    <div class="artist-detail-image">
+
+                        <img src="~/images/artist1.jpg"
+                             alt="South African Artist"
+                             class="img-fluid" />
+
+                    </div>
+
+                </div>
+
+
+                <!-- ARTIST INTRODUCTION -->
+
+                <div class="col-lg-7">
+
+                    <p class="artist-detail-label">
+                        IZIKO MUSEUMS OF SOUTH AFRICA
+                    </p>
+
+                    <h1>
+                        South African Artist
+                    </h1>
+
+                    <p class="artist-detail-introduction">
+
+                        Discover the life, artistic journey and
+                        contribution of this artist to South
+                        African art and cultural heritage.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ARTIST INFORMATION -->
+
+    <section class="artist-information-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- BIOGRAPHY -->
+
+                <div class="col-lg-8">
+
+                    <p class="artist-detail-label">
+                        ARTIST BIOGRAPHY
+                    </p>
+
+                    <h2>
+                        About the Artist
+                    </h2>
+
+                    <p>
+
+                        This artist represents an important
+                        contribution to South Africa's rich
+                        artistic heritage. Their work reflects
+                        the diverse cultural experiences and
+                        history of South Africa.
+
+                    </p>
+
+                    <p>
+
+                        Through their creative practice, the
+                        artist explores themes of identity,
+                        culture, society and heritage. Their
+                        work forms part of the broader story
+                        of South African art.
+
+                    </p>
+
+                    <p>
+
+                        Visitors can explore the artist's
+                        work and learn more about the historical
+                        and cultural context surrounding their
+                        artworks.
+
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK INFORMATION -->
+
+                <div class="col-lg-4">
+
+                    <div class="artist-facts">
+
+                        <h3>
+                            Artist Information
+                        </h3>
+
+                        <div class="artist-fact">
+
+                            <strong>
+                                Nationality
+                            </strong>
+
+                            <span>
+                                South African
+                            </span>
+
+                        </div>
+
+                        <div class="artist-fact">
+
+                            <strong>
+                                Field
+                            </strong>
+
+                            <span>
+                                Visual Art
+                            </span>
+
+                        </div>
+
+                        <div class="artist-fact">
+
+                            <strong>
+                                Collection
+                            </strong>
+
+                            <span>
+                                Iziko Museums
+                            </span>
+
+                        </div>
+
+                        <div class="artist-fact">
+
+                            <strong>
+                                Region
+                            </strong>
+
+                            <span>
+                                South Africa
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ARTWORKS BY ARTIST -->
+
+    <section class="artist-artworks-section">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <p class="artist-detail-label">
+                    COLLECTION
+                </p>
+
+                <h2>
+                    Featured Works
+                </h2>
+
+                <p>
+                    Explore artworks associated with this artist.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- WORK 1 -->
+
+                <div class="col-md-4">
+
+                    <div class="artist-work-card">
+
+                        <img src="~/images/artwork1.jpg"
+                             alt="Artwork by artist" />
+
+                        <div class="artist-work-content">
+
+                            <h3>
+                                Featured Artwork
+                            </h3>
+
+                            <p>
+                                Explore this artwork and discover
+                                its cultural significance.
+                            </p>
+
+                            <a asp-controller="Artworks"
+                               asp-action="Details"
+                               asp-route-id="1"
+                               class="artist-detail-button">
+
+                                View Artwork
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WORK 2 -->
+
+                <div class="col-md-4">
+
+                    <div class="artist-work-card">
+
+                        <img src="~/images/artwork2.jpg"
+                             alt="Artwork by artist" />
+
+                        <div class="artist-work-content">
+
+                            <h3>
+                                Museum Collection
+                            </h3>
+
+                            <p>
+                                Learn more about this work from
+                                the museum collection.
+                            </p>
+
+                            <a asp-controller="Artworks"
+                               asp-action="Details"
+                               asp-route-id="2"
+                               class="artist-detail-button">
+
+                                View Artwork
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- WORK 3 -->
+
+                <div class="col-md-4">
+
+                    <div class="artist-work-card">
+
+                        <img src="~/images/artwork3.jpg"
+                             alt="Artwork by artist" />
+
+                        <div class="artist-work-content">
+
+                            <h3>
+                                Heritage Artwork
+                            </h3>
+
+                            <p>
+                                Discover the heritage and history
+                                represented in this artwork.
+                            </p>
+
+                            <a asp-controller="Artworks"
+                               asp-action="Details"
+                               asp-route-id="3"
+                               class="artist-detail-button">
+
+                                View Artwork
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK BUTTON -->
+
+    <section class="artist-back-section">
+
+        <div class="container text-center">
+
+            <a asp-controller="Artists"
+               asp-action="Index"
+               class="artist-back-button">
+
+                ← Back to Artists
+
+            </a>
+
+        </div>
+
+    </section>
+
+</div>

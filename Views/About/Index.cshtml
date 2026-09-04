@@ -1,0 +1,313 @@
+﻿@{
+    ViewData["Title"] = "About Iziko Museums";
+}
+
+<div class="about-page">
+
+    <!-- HERO SECTION -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+
+                <p class="about-label">
+                    IZIKO MUSEUMS OF SOUTH AFRICA
+                </p>
+
+                <h1>About Iziko Museums</h1>
+
+                <p class="about-hero-text">
+                    Discover South Africa's history, art, culture
+                    and natural heritage through the collections
+                    and exhibitions of Iziko Museums.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="about-introduction">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-image-box">
+
+                        <img src="~/images/museum.jpg"
+                             alt="Iziko Museum"
+                             class="img-fluid" />
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <p class="about-label">
+                        OUR STORY
+                    </p>
+
+                    <h2>Connecting People With Heritage</h2>
+
+                    <p>
+                        Iziko Museums of South Africa brings together
+                        museums, collections and cultural experiences
+                        that help visitors explore South Africa's
+                        rich history and heritage.
+                    </p>
+
+                    <p>
+                        Through exhibitions, artworks, historical
+                        collections and educational programmes,
+                        visitors can discover stories that connect
+                        the past with the present.
+                    </p>
+
+                    <p>
+                        The museum experience provides opportunities
+                        for people of different ages and backgrounds
+                        to learn, explore and engage with South
+                        African culture.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MISSION -->
+    <section class="about-mission">
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <p class="about-label">
+                    OUR PURPOSE
+                </p>
+
+                <h2>Our Mission</h2>
+
+                <p class="about-section-intro">
+                    Preserving, sharing and celebrating South Africa's
+                    cultural and natural heritage.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="about-feature-card">
+
+                        <div class="about-feature-icon">
+                            🏛
+                        </div>
+
+                        <h3>Preserve</h3>
+
+                        <p>
+                            Protect important collections and
+                            heritage for future generations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="about-feature-card">
+
+                        <div class="about-feature-icon">
+                            🎨
+                        </div>
+
+                        <h3>Celebrate</h3>
+
+                        <p>
+                            Celebrate South African art, culture,
+                            history and natural heritage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="about-feature-card">
+
+                        <div class="about-feature-icon">
+                            📚
+                        </div>
+
+                        <h3>Educate</h3>
+
+                        <p>
+                            Provide visitors with opportunities to
+                            learn through collections and exhibitions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- VISITOR EXPERIENCE -->
+    <section class="about-experience">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+
+                    <p class="about-label">
+                        YOUR MUSEUM EXPERIENCE
+                    </p>
+
+                    <h2>Explore, Learn & Discover</h2>
+
+                    <p>
+                        Our website makes it easier for visitors to
+                        discover artworks, artists, exhibitions and
+                        multimedia content before and during their
+                        museum experience.
+                    </p>
+
+                    <p>
+                        Explore the digital collection, learn about
+                        artists, discover featured artworks and access
+                        multimedia resources designed to make learning
+                        engaging and accessible.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WEBSITE FEATURES -->
+    <section class="about-features">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <p class="about-label">
+                    EXPLORE OUR WEBSITE
+                </p>
+
+                <h2>Discover More</h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="about-link-card">
+
+                        <h3>Explore Artworks</h3>
+
+                        <p>
+                            Browse artworks and discover the stories
+                            behind the museum collection.
+                        </p>
+
+                        <a asp-controller="Artworks"
+                           asp-action="Index"
+                           class="about-button">
+                            Explore Artworks →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="about-link-card">
+
+                        <h3>Meet the Artists</h3>
+
+                        <p>
+                            Learn more about artists and their
+                            contribution to South African art.
+                        </p>
+
+                        <a asp-controller="Artists"
+                           asp-action="Index"
+                           class="about-button">
+                            View Artists →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="about-link-card">
+
+                        <h3>Multimedia</h3>
+
+                        <p>
+                            Explore digital experiences, videos and
+                            educational museum content.
+                        </p>
+
+                        <a asp-controller="Multimedia"
+                           asp-action="Index"
+                           class="about-button">
+                            Explore Multimedia →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL SECTION -->
+    <section class="about-final">
+
+        <div class="container text-center">
+
+            <p class="about-label">
+                IZIKO MUSEUMS
+            </p>
+
+            <h2>Discover South Africa's Heritage</h2>
+
+            <p>
+                Explore the collections, stories and experiences
+                waiting to be discovered.
+            </p>
+
+        </div>
+
+    </section>
+
+</div>

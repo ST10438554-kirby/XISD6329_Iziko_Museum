@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="account-page">
+
+    <div class="account-container">
+
+        <div class="account-header">
+
+            <p class="account-label">
+                IZIKO MUSEUMS
+            </p>
+
+            <h1>Create an Account</h1>
+
+            <p>
+                Create an account to save artworks,
+                manage your favourites and enjoy
+                a personalised museum experience.
+            </p>
+
+        </div>
+
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="account-error">
+                @ViewBag.Error
+            </div>
+        }
+
+
+        <form asp-controller="Account"
+              asp-action="Register"
+              method="post"
+              class="account-form">
+
+            <div class="form-group">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input type="text"
+                       id="fullName"
+                       name="fullName"
+                       placeholder="Enter your full name"
+                       required />
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required />
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Minimum 6 characters"
+                       required />
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input type="password"
+                       id="confirmPassword"
+                       name="confirmPassword"
+                       placeholder="Confirm your password"
+                       required />
+
+            </div>
+
+
+            <button type="submit"
+                    class="account-button">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+
+        <div class="account-footer">
+
+            <p>
+                Already have an account?
+            </p>
+
+            <a asp-controller="Account"
+               asp-action="Login">
+
+                Login here
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

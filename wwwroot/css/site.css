@@ -1,0 +1,3350 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f3ed;
+    color: #252525;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url('/images/museum.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.eyebrow {
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+    .hero h1 span {
+        display: block;
+    }
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #8b5e3c;
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #8b5e3c;
+    color: #8b5e3c;
+    background: transparent;
+}
+
+.hero .btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.welcome-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+    .welcome-section h2 {
+        font-size: 38px;
+    }
+
+    .welcome-section p {
+        line-height: 1.8;
+    }
+
+.page-header {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+    .search-box input {
+        width: 400px;
+        padding: 13px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px 8% 80px;
+}
+
+.artwork-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+    .artwork-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+.artwork-info {
+    padding: 20px;
+}
+
+    .artwork-info h3 {
+        margin-top: 0;
+    }
+
+    .artwork-info p {
+        color: #777;
+    }
+
+/* Multimedia Page */
+
+.multimedia-page {
+    background: #f8f6f1;
+}
+
+/* Header */
+
+.multimedia-header {
+    padding: 80px 20px;
+    background: #eee9df;
+}
+
+    .multimedia-header h1 {
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .multimedia-header p:not(.section-label) {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #666;
+    }
+
+.section-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+/* Featured Video */
+
+.featured-video-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+    .section-title h2 {
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .section-title p:not(.section-label) {
+        color: #666;
+    }
+
+.featured-video {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Video Placeholder */
+
+.video-placeholder {
+    min-height: 390px;
+    background: linear-gradient(135deg, #6c6255, #292622);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+    .video-placeholder::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+
+.play-button {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding-left: 4px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.video-placeholder-text {
+    text-align: center;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+    .video-placeholder-text h3 {
+        font-size: 25px;
+    }
+
+    .video-placeholder-text p {
+        color: #ddd;
+    }
+
+/* Featured Content */
+
+.featured-video-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.featured-video-content p:not(.section-label) {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+.museum-button {
+    display: inline-block;
+    background: #302d28;
+    color: white;
+    padding: 13px 28px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .museum-button:hover {
+        background: #555047;
+        color: white;
+    }
+
+/* Multimedia Content */
+
+.multimedia-content {
+    padding: 80px 0;
+    background: white;
+}
+
+.multimedia-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.multimedia-card {
+    background: #f8f6f1;
+    border: 1px solid #e5e0d7;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+    .multimedia-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+/* Media Images */
+
+.media-image {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.media-one {
+    background: linear-gradient(135deg, #81776a, #4b453e);
+}
+
+.media-two {
+    background: linear-gradient(135deg, #927c65, #53483d);
+}
+
+.media-three {
+    background: linear-gradient(135deg, #6c756d, #3f4841);
+}
+
+.media-play {
+    width: 60px;
+    height: 60px;
+    background: white;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+    font-size: 20px;
+}
+
+/* Card Content */
+
+.multimedia-card-content {
+    padding: 25px;
+}
+
+.media-category {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.multimedia-card-content h3 {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.multimedia-card-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.media-button {
+    background: transparent;
+    border: 1px solid #302d28;
+    padding: 9px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .media-button:hover {
+        background: #302d28;
+        color: white;
+    }
+
+/* QR Section */
+
+.qr-section {
+    padding: 80px 0;
+    background: #eee9df;
+}
+
+.qr-content {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 60px;
+    align-items: center;
+}
+
+    .qr-content h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .qr-content p:not(.section-label) {
+        max-width: 650px;
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+.qr-placeholder {
+    text-align: center;
+}
+
+.qr-pattern {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 15px;
+    background: linear-gradient(90deg, #222 10px, transparent 10px) 0 0 / 30px 30px, linear-gradient(#222 10px, transparent 10px) 0 0 / 30px 30px, white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.qr-placeholder p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    .featured-video {
+        grid-template-columns: 1fr;
+    }
+
+    .multimedia-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .multimedia-header h1 {
+        font-size: 40px;
+    }
+
+    .featured-video-content h2 {
+        font-size: 32px;
+    }
+
+    .multimedia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qr-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+        .qr-content p:not(.section-label) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+/* ARTWORKS page */
+
+.artworks-page {
+    padding: 70px 8% 90px;
+    background-color: #f7f3ed;
+    min-height: 80vh;
+}
+
+.artworks-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+    .artworks-header h1 {
+        font-size: 48px;
+        margin: 15px 0;
+        color: #2c2926;
+    }
+
+    .artworks-header p:not(.eyebrow) {
+        color: #6f6963;
+        line-height: 1.7;
+    }
+
+
+/* SEARCH */
+
+.artwork-search {
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+    .artwork-search input {
+        flex: 1;
+        padding: 14px 18px;
+        border: 1px solid #d8d1c8;
+        border-radius: 4px 0 0 4px;
+        background-color: #ffffff;
+        outline: none;
+    }
+
+        .artwork-search input:focus {
+            border-color: #8b5e3c;
+        }
+
+.artwork-search-button {
+    padding: 14px 25px;
+    border: none;
+    background-color: #8b5e3c;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+    .artwork-search-button:hover {
+        background-color: #70482d;
+    }
+
+
+/* ARTWORK GRID */
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ARTWORK CARD */
+
+.artwork-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .artwork-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+
+/* IMAGE */
+
+.artwork-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-color: #e8e2da;
+}
+
+    .artwork-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+/* CONTENT */
+
+.artwork-content {
+    padding: 25px;
+}
+
+.artwork-category {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #8b5e3c;
+    margin-bottom: 10px;
+}
+
+.artwork-content h2 {
+    font-size: 24px;
+    color: #2c2926;
+    margin-bottom: 12px;
+}
+
+.artwork-content p:not(.artwork-category) {
+    color: #6f6963;
+    line-height: 1.6;
+}
+
+
+/* BUTTON */
+
+.artwork-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+    .artwork-button:hover {
+        background-color: #70482d;
+        color: white;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .artworks-page {
+        padding: 50px 5%;
+    }
+
+    .artworks-header h1 {
+        font-size: 36px;
+    }
+
+    .artwork-search {
+        width: 100%;
+    }
+
+        .artwork-search input {
+            width: 100%;
+        }
+}
+
+/* ARTISTS page */
+.artists-page {
+    padding: 70px 8% 90px;
+    background-color: #f7f3ed;
+    min-height: 80vh;
+}
+
+
+/* PAGE HEADER */
+
+.artists-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+    .artists-header h1 {
+        font-size: 48px;
+        margin: 15px 0;
+        color: #2c2926;
+    }
+
+    .artists-header p:not(.eyebrow) {
+        color: #6f6963;
+        line-height: 1.7;
+    }
+
+
+/* SEARCH */
+
+.artist-search {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+    .artist-search input {
+        width: 100%;
+        padding: 14px 18px;
+        border: 1px solid #d8d1c8;
+        border-radius: 4px;
+        background-color: #ffffff;
+        outline: none;
+        font-size: 15px;
+    }
+
+        .artist-search input:focus {
+            border-color: #8b5e3c;
+        }
+
+
+/* ARTIST GRID */
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ARTIST CARD */
+
+.artist-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .artist-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+
+/* ARTIST IMAGE */
+
+.artist-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background-color: #e8e2da;
+}
+
+    .artist-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+/* ARTIST CONTENT */
+
+.artist-content {
+    padding: 25px;
+}
+
+.artist-category {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #8b5e3c;
+    margin-bottom: 10px;
+}
+
+.artist-content h2 {
+    font-size: 24px;
+    color: #2c2926;
+    margin-bottom: 12px;
+}
+
+.artist-content p:not(.artist-category) {
+    color: #6f6963;
+    line-height: 1.6;
+}
+
+
+/* ARTIST BUTTON */
+
+.artist-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+    .artist-button:hover {
+        background-color: #70482d;
+        color: white;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .artists-page {
+        padding: 50px 5%;
+    }
+
+    .artists-header h1 {
+        font-size: 36px;
+    }
+
+    .artist-image {
+        height: 280px;
+    }
+}
+
+/*MAIN NAVIGATION */
+
+.museum-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e0d8;
+    padding: 18px 0;
+}
+
+.museum-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #2c2926 !important;
+    text-decoration: none;
+}
+
+    .museum-logo span {
+        display: block;
+        font-size: 10px;
+        letter-spacing: 5px;
+        margin-top: -3px;
+    }
+
+.museum-navbar .nav-link {
+    color: #403b36;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 18px;
+    transition: all 0.3s ease;
+}
+
+    .museum-navbar .nav-link:hover {
+        color: #8b5e3c;
+    }
+
+.museum-navbar .login-link {
+    border: 1px solid #8b5e3c;
+    padding: 8px 18px !important;
+    border-radius: 4px;
+}
+
+    .museum-navbar .login-link:hover {
+        background-color: #8b5e3c;
+        color: #ffffff !important;
+    }
+
+
+/* FOOTER */
+
+.museum-footer {
+    background-color: #2c2926;
+    color: #ffffff;
+    padding: 60px 0 20px;
+}
+
+    .museum-footer h5 {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .museum-footer p {
+        color: #d5d0ca;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: #d5d0ca;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+.museum-footer hr {
+    border-color: #5a554f;
+    margin-top: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+}
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 13px;
+    }
+
+
+/* WEBSITE */
+
+body {
+    background-color: #f7f3ed;
+    color: #252525;
+}
+
+main {
+    min-height: 70vh;
+}
+
+
+/* BUTTONS */
+
+.btn-primary {
+    background-color: #8b5e3c;
+    border-color: #8b5e3c;
+}
+
+    .btn-primary:hover {
+        background-color: #70482d;
+        border-color: #70482d;
+    }
+
+.btn-outline {
+    border: 1px solid #8b5e3c;
+    color: #8b5e3c;
+    background-color: transparent;
+}
+
+    .btn-outline:hover {
+        background-color: #8b5e3c;
+        color: #ffffff;
+    }
+
+
+/* RESPONSIVE NAVIGATION */
+
+@media (max-width: 991px) {
+
+    .museum-navbar .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .museum-navbar .login-link {
+        display: inline-block;
+        margin-top: 8px;
+    }
+}
+
+/* =========================================
+   ARTWORK DETAILS PAGE
+   ========================================= */
+
+.artwork-detail-image {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e5e0d8;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+    .artwork-detail-image img {
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+    }
+
+.artwork-subtitle {
+    color: #8b5e3c;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.artwork-information {
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 4px solid #8b5e3c;
+}
+
+    .artwork-information p {
+        margin-bottom: 10px;
+    }
+
+    .artwork-information strong {
+        color: #2c2926;
+    }
+
+/* =========================================
+   ARTIST DETAILS PAGE
+   ========================================= */
+
+.artist-details-page {
+    background-color: #f8f6f1;
+}
+
+
+/* HERO */
+
+.artist-details-hero {
+    padding: 80px 0;
+    background-color: #eee9df;
+}
+
+.artist-detail-image {
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+    .artist-detail-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+.artist-detail-label {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #8b5e3c;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.artist-details-hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #2c2926;
+    margin-bottom: 25px;
+}
+
+.artist-detail-introduction {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* INFORMATION */
+
+.artist-information-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+    .artist-information-section h2 {
+        font-size: 38px;
+        color: #2c2926;
+        margin-bottom: 25px;
+    }
+
+    .artist-information-section p:not(.artist-detail-label) {
+        color: #666;
+        line-height: 1.8;
+    }
+
+
+/* ARTIST FACTS */
+
+.artist-facts {
+    background-color: #f8f6f1;
+    padding: 30px;
+    border-left: 4px solid #8b5e3c;
+}
+
+    .artist-facts h3 {
+        margin-bottom: 25px;
+        color: #2c2926;
+    }
+
+.artist-fact {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+    .artist-fact:last-child {
+        border-bottom: none;
+    }
+
+    .artist-fact strong {
+        color: #2c2926;
+        margin-bottom: 5px;
+    }
+
+    .artist-fact span {
+        color: #777;
+    }
+
+
+/* ARTWORKS */
+
+.artist-artworks-section {
+    padding: 80px 0;
+    background-color: #f8f6f1;
+}
+
+    .artist-artworks-section h2 {
+        font-size: 40px;
+        color: #2c2926;
+    }
+
+    .artist-artworks-section > .container > .text-center p:not(.artist-detail-label) {
+        color: #666;
+    }
+
+
+/* WORK CARD */
+
+.artist-work-card {
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+    .artist-work-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .artist-work-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+.artist-work-content {
+    padding: 25px;
+}
+
+    .artist-work-content h3 {
+        font-size: 22px;
+        color: #2c2926;
+    }
+
+    .artist-work-content p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+.artist-detail-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+    .artist-detail-button:hover {
+        background-color: #70482d;
+        color: white;
+    }
+
+
+/* BACK BUTTON */
+
+.artist-back-section {
+    padding: 50px 0;
+    background-color: #eee9df;
+}
+
+.artist-back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #302d28;
+    color: #302d28;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .artist-back-button:hover {
+        background-color: #302d28;
+        color: white;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .artist-details-hero {
+        padding: 50px 0;
+    }
+
+        .artist-details-hero h1 {
+            font-size: 38px;
+        }
+
+    .artist-detail-image img {
+        height: 400px;
+    }
+
+    .artist-information-section,
+    .artist-artworks-section {
+        padding: 50px 0;
+    }
+}
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-page {
+    background-color: #f8f6f1;
+}
+
+
+/* HERO */
+
+.about-hero {
+    padding: 100px 0;
+    background-color: #eee9df;
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-label {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #8b5e3c;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #2c2926;
+    margin-bottom: 25px;
+}
+
+.about-hero-text {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* INTRODUCTION */
+
+.about-introduction {
+    padding: 90px 0;
+    background-color: white;
+}
+
+.about-image-box {
+    padding: 15px;
+    background-color: #f8f6f1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+    .about-image-box img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+.about-introduction h2 {
+    font-size: 40px;
+    color: #2c2926;
+    margin-bottom: 25px;
+}
+
+.about-introduction p:not(.about-label) {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* MISSION */
+
+.about-mission {
+    padding: 90px 0;
+    background-color: #f8f6f1;
+}
+
+    .about-mission h2,
+    .about-features h2 {
+        font-size: 40px;
+        color: #2c2926;
+        margin-bottom: 20px;
+    }
+
+.about-section-intro {
+    color: #666;
+    font-size: 17px;
+}
+
+
+.about-feature-card {
+    background-color: white;
+    padding: 40px 30px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+    .about-feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    }
+
+.about-feature-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-feature-card h3 {
+    font-size: 24px;
+    color: #2c2926;
+    margin-bottom: 15px;
+}
+
+.about-feature-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* EXPERIENCE */
+
+.about-experience {
+    padding: 90px 0;
+    background-color: #eee9df;
+}
+
+    .about-experience h2 {
+        font-size: 40px;
+        color: #2c2926;
+        margin-bottom: 25px;
+    }
+
+    .about-experience p:not(.about-label) {
+        color: #666;
+        line-height: 1.8;
+    }
+
+
+/* WEBSITE FEATURES */
+
+.about-features {
+    padding: 90px 0;
+    background-color: white;
+}
+
+.about-link-card {
+    height: 100%;
+    padding: 35px;
+    border: 1px solid #ddd;
+    background-color: #f8f6f1;
+    transition: 0.3s;
+}
+
+    .about-link-card:hover {
+        transform: translateY(-5px);
+        border-color: #8b5e3c;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-link-card h3 {
+        color: #2c2926;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .about-link-card p {
+        color: #666;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+.about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b5e3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+    .about-button:hover {
+        background-color: #70482d;
+        color: white;
+    }
+
+
+/* FINAL SECTION */
+
+.about-final {
+    padding: 80px 0;
+    background-color: #2c2926;
+}
+
+    .about-final .about-label {
+        color: #d1a77a;
+    }
+
+    .about-final h2 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about-final p:not(.about-label) {
+        color: #ddd;
+        font-size: 17px;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        padding: 60px 0;
+    }
+
+        .about-hero h1 {
+            font-size: 40px;
+        }
+
+    .about-hero-text {
+        font-size: 17px;
+    }
+
+    .about-introduction,
+    .about-mission,
+    .about-experience,
+    .about-features {
+        padding: 60px 0;
+    }
+
+        .about-introduction h2,
+        .about-mission h2,
+        .about-experience h2,
+        .about-features h2,
+        .about-final h2 {
+            font-size: 32px;
+        }
+
+    .about-image-box img {
+        height: 350px;
+    }
+}
+
+/* =========================================
+   LOGIN & REGISTER
+   ========================================= */
+
+.account-page {
+    min-height: 80vh;
+    padding: 80px 20px;
+    background-color: #f8f6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-container {
+    width: 100%;
+    max-width: 520px;
+    background-color: white;
+    padding: 45px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.account-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.account-label {
+    color: #8b5e3c;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 12px;
+}
+
+.account-header h1 {
+    font-size: 38px;
+    color: #2c2926;
+    margin-bottom: 15px;
+}
+
+.account-header p:not(.account-label) {
+    color: #666;
+    line-height: 1.6;
+}
+
+.account-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        color: #2c2926;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 13px 15px;
+        border: 1px solid #d8d3ca;
+        background-color: #faf9f6;
+        outline: none;
+        transition: 0.3s;
+    }
+
+        .form-group input:focus {
+            border-color: #8b5e3c;
+            background-color: white;
+        }
+
+.account-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background-color: #302d28;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .account-button:hover {
+        background-color: #8b5e3c;
+    }
+
+.account-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+    .account-footer p {
+        margin-bottom: 5px;
+        color: #666;
+    }
+
+    .account-footer a {
+        color: #8b5e3c;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+        .account-footer a:hover {
+            text-decoration: underline;
+        }
+
+/* =========================================
+   IZIKO MUSEUM HOME PAGE
+   ========================================= */
+
+
+/* GENERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f4ef;
+    color: #292621;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.museum-hero {
+    min-height: 650px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55) ), url('/images/home/museum-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.hero-overlay {
+    width: 100%;
+}
+
+
+.hero-content {
+    max-width: 760px;
+    color: white;
+    padding: 100px 0;
+}
+
+
+.hero-subtitle {
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.hero-content h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+
+    .hero-content h1 span {
+        display: block;
+    }
+
+
+.hero-text {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 620px;
+    margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.museum-btn {
+    display: inline-block;
+    padding: 13px 27px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    border: 2px solid transparent;
+}
+
+
+.primary-btn {
+    background: #a8753d;
+    color: white;
+}
+
+
+    .primary-btn:hover {
+        background: #875b2d;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+
+    .secondary-btn:hover {
+        background: white;
+        color: #292621;
+    }
+
+
+.light-btn {
+    background: white;
+    color: #292621;
+}
+
+
+    .light-btn:hover {
+        background: #f1eadf;
+        color: #292621;
+    }
+
+
+/* =========================================
+   SECTION HEADINGS
+   ========================================= */
+
+.section-heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+
+
+    .section-heading span {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: 700;
+        color: #a8753d;
+        margin-bottom: 12px;
+    }
+
+
+    .section-heading h2 {
+        font-size: clamp(30px, 4vw, 48px);
+        margin-bottom: 18px;
+        font-weight: 700;
+    }
+
+
+    .section-heading p {
+        color: #716c65;
+        line-height: 1.7;
+    }
+
+
+/* =========================================
+   WELCOME
+   ========================================= */
+
+.welcome-section {
+    padding: 90px 0;
+    background: #fff;
+}
+
+
+.welcome-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+
+.welcome-text {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+    .welcome-text p {
+        margin-bottom: 20px;
+    }
+
+
+.welcome-highlight {
+    background: #f0e7da;
+    padding: 45px 35px;
+    text-align: center;
+    border-top: 4px solid #a8753d;
+}
+
+
+.highlight-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+
+.welcome-highlight h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+
+.welcome-highlight p {
+    line-height: 1.7;
+    color: #625c54;
+}
+
+
+.text-link {
+    color: #a8753d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+    .text-link:hover {
+        color: #70491f;
+    }
+
+
+/* =========================================
+   QUICK INFO
+   ========================================= */
+
+.quick-info-section {
+    padding: 30px 0 80px;
+    background: #fff;
+}
+
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.info-card {
+    background: #f7f4ef;
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #e4ded5;
+}
+
+
+.info-icon {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+
+.info-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.info-card p {
+    margin: 5px 0;
+    color: #777067;
+}
+
+
+.info-card strong {
+    color: #a8753d;
+}
+
+
+/* =========================================
+   VISIT
+   ========================================= */
+
+.visit-section {
+    padding: 100px 0;
+    background: #ebe4d9;
+}
+
+
+.visit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.visit-card {
+    background: white;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+.visit-card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+.visit-card h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+
+.visit-card h4 {
+    color: #a8753d;
+}
+
+
+.visit-card p {
+    line-height: 1.7;
+}
+
+
+.visit-card hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+
+.small-note {
+    color: #777;
+    font-size: 14px;
+}
+
+
+.price-list > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.price-list strong {
+    color: #a8753d;
+}
+
+
+.free-entry {
+    margin-top: 20px;
+    padding: 12px;
+    text-align: center;
+    background: #f0e7da;
+    font-weight: 700;
+    color: #765126;
+}
+
+
+/* TICKET BOX */
+
+.ticket-box {
+    margin-top: 40px;
+    padding: 30px 35px;
+    background: #292621;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+
+    .ticket-box span {
+        font-size: 11px;
+        letter-spacing: 3px;
+        color: #d1a76f;
+    }
+
+
+    .ticket-box h3 {
+        margin: 8px 0 0;
+    }
+
+
+/* =========================================
+   EDUCATION
+   ========================================= */
+
+.education-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+
+    .education-table th {
+        background: #292621;
+        color: white;
+        text-align: left;
+        padding: 17px;
+    }
+
+
+    .education-table td {
+        padding: 17px;
+        border-bottom: 1px solid #e7e2dc;
+    }
+
+
+    .education-table tr:hover {
+        background: #f8f4ed;
+    }
+
+
+    .education-table td:nth-child(2) {
+        font-weight: 700;
+        color: #a8753d;
+    }
+
+
+    .education-table small {
+        color: #777;
+    }
+
+
+.commemorative-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f0e7da;
+    text-align: center;
+}
+
+
+    .commemorative-box strong {
+        margin-left: 10px;
+    }
+
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-section {
+    padding: 100px 0;
+    background: #292621;
+}
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 45px;
+    align-items: stretch;
+}
+
+
+.contact-card {
+    color: white;
+    padding: 40px 0;
+}
+
+
+    .contact-card > span {
+        font-size: 12px;
+        letter-spacing: 3px;
+        color: #d1a76f;
+    }
+
+
+    .contact-card h2 {
+        font-size: 42px;
+        margin: 15px 0 35px;
+    }
+
+
+.contact-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+
+.contact-icon {
+    font-size: 25px;
+}
+
+
+.contact-item small {
+    color: #bdb6ad;
+}
+
+
+.contact-item p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+
+.map-container {
+    min-height: 400px;
+}
+
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+    }
+
+
+/* =========================================
+   FUN FACTS
+   ========================================= */
+
+.facts-section {
+    padding: 100px 0;
+    background: #f7f4ef;
+}
+
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+.fact-card {
+    background: white;
+    padding: 35px 25px;
+    position: relative;
+    border-bottom: 3px solid #a8753d;
+}
+
+
+.fact-number {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #bbb2a8;
+}
+
+
+.fact-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.fact-card h3 {
+    font-size: 22px;
+}
+
+
+.fact-card p {
+    color: #716c65;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FINAL CTA
+   ========================================= */
+
+.final-cta {
+    padding: 100px 20px;
+    text-align: center;
+    background-image: linear-gradient( rgba(45, 37, 28, 0.88), rgba(45, 37, 28, 0.88) ), url('/images/museum-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+    .final-cta h2 {
+        font-size: clamp(32px, 5vw, 52px);
+        margin-bottom: 15px;
+    }
+
+
+    .final-cta p {
+        max-width: 600px;
+        margin: 0 auto 30px;
+        line-height: 1.7;
+    }
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .visit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .museum-hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding: 80px 20px;
+    }
+
+        .hero-content h1 {
+            font-size: 45px;
+        }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ticket-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome-section,
+    .visit-section,
+    .education-section,
+    .contact-section,
+    .facts-section {
+        padding: 70px 20px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .museum-btn {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+}
+
+.account-error {
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #f8e5e5;
+    color: #8a2929;
+    text-align: center;
+}
+
+.account-success {
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #e5f4e9;
+    color: #27643a;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .account-page {
+        padding: 40px 15px;
+    }
+
+    .account-container {
+        padding: 30px 20px;
+    }
+
+    .account-header h1 {
+        font-size: 32px;
+    }
+}
+
+/* =========================================
+   IZIKO NAVIGATION
+   ========================================= */
+
+.iziko-navbar {
+    background: #fff;
+    border-bottom: 1px solid #e5dfd6;
+    padding: 12px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+
+.iziko-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #292621 !important;
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.iziko-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.iziko-brand span {
+    white-space: nowrap;
+}
+
+
+.iziko-navbar .nav-link {
+    color: #292621 !important;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 14px !important;
+    transition: all 0.2s ease;
+}
+
+
+    .iziko-navbar .nav-link:hover {
+        color: #a8753d !important;
+    }
+
+
+.iziko-navbar .login-link {
+    margin-left: 8px;
+    background: #a8753d;
+    color: white !important;
+    border-radius: 3px;
+}
+
+
+    .iziko-navbar .login-link:hover {
+        background: #875b2d;
+        color: white !important;
+    }
+
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 991px) {
+
+    .iziko-navbar .navbar-nav {
+        padding-top: 15px;
+    }
+
+
+    .iziko-navbar .nav-link {
+        padding: 10px 5px !important;
+    }
+
+
+    .iziko-navbar .login-link {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+
+/* =========================================
+   IZIKO FOOTER
+   ========================================= */
+
+.iziko-footer {
+    background: #292621;
+    color: white;
+    padding: 55px 0 20px;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+
+    .footer-content h3 {
+        margin-bottom: 12px;
+        color: #d1a76f;
+    }
+
+
+    .footer-content p {
+        color: #c8c2ba;
+        line-height: 1.7;
+        margin-bottom: 5px;
+    }
+
+
+.footer-bottom {
+    padding-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* =========================================
+   IZIKO ARTISTS PAGE - NEW STYLING
+   ========================================= */
+
+.artists-page {
+    background: #f7f4ef;
+    padding: 80px 0 100px;
+    min-height: 80vh;
+}
+
+
+/* =========================================
+   ARTISTS HEADER
+   ========================================= */
+
+.artists-header {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+    .artists-header .eyebrow {
+        color: #a8753d;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .artists-header h1 {
+        font-size: clamp(40px, 5vw, 60px);
+        color: #292621;
+        margin: 15px 0 20px;
+        font-weight: 700;
+    }
+
+    .artists-header p {
+        color: #716c65;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.artist-search {
+    max-width: 650px;
+    margin: 0 auto 60px;
+    display: flex;
+}
+
+    .artist-search input {
+        flex: 1;
+        padding: 15px 18px;
+        border: 1px solid #d8d1c8;
+        background: #ffffff;
+        color: #292621;
+        font-size: 15px;
+        outline: none;
+        border-radius: 4px 0 0 4px;
+    }
+
+        .artist-search input:focus {
+            border-color: #a8753d;
+        }
+
+        .artist-search input::placeholder {
+            color: #99928a;
+        }
+
+    .artist-search button {
+        padding: 15px 25px;
+        border: none;
+        background: #a8753d;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 0 4px 4px 0;
+        transition: 0.3s ease;
+    }
+
+        .artist-search button:hover {
+            background: #875b2d;
+        }
+
+
+/* =========================================
+   ARTIST GRID
+   ========================================= */
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   ARTIST CARD
+   ========================================= */
+
+.artist-card {
+    background: #ffffff;
+    border: 1px solid #e5dfd6;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .artist-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+    }
+
+
+/* =========================================
+   ARTIST IMAGE
+   ========================================= */
+
+.artist-image {
+    width: 100%;
+    height: 360px;
+    background: #e8e2da;
+    overflow: hidden;
+    position: relative;
+}
+
+    .artist-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+.artist-card:hover .artist-image img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   IMAGE PLACEHOLDER
+   ========================================= */
+
+.artist-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ddd3c6, #b9aa98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #62584d;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+    .artist-image-placeholder span {
+        padding: 15px;
+    }
+
+
+/* =========================================
+   ARTIST CONTENT
+   ========================================= */
+
+.artist-content {
+    padding: 32px;
+}
+
+.artist-category {
+    color: #a8753d;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.artist-content h2 {
+    color: #292621;
+    font-size: 30px;
+    margin: 0 0 18px;
+    line-height: 1.2;
+}
+
+.artist-content p {
+    color: #716c65;
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   ARTIST HISTORY
+   ========================================= */
+
+.artist-history {
+    max-height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .artist-history::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: linear-gradient( transparent, #ffffff );
+    }
+
+
+/* =========================================
+   ARTIST BUTTON
+   ========================================= */
+
+.artist-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background: #a8753d;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    .artist-button:hover {
+        background: #875b2d;
+        color: white !important;
+        transform: translateY(-2px);
+    }
+
+
+/* =========================================
+   ARTIST NUMBER
+   ========================================= */
+
+.artist-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #b9b0a7;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   ARTIST DETAILS LINK
+   ========================================= */
+
+.artist-details-link {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 11px 20px;
+    border: 1px solid #a8753d;
+    color: #a8753d !important;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+    .artist-details-link:hover {
+        background: #a8753d;
+        color: white !important;
+    }
+
+
+/* =========================================
+   FEATURED ARTIST
+   ========================================= */
+
+.featured-artist {
+    border-top: 4px solid #a8753d;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .artist-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .artist-image {
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .artists-page {
+        padding: 55px 15px 70px;
+    }
+
+    .artists-header h1 {
+        font-size: 38px;
+    }
+
+    .artists-header p {
+        font-size: 15px;
+    }
+
+    .artist-search {
+        margin-bottom: 40px;
+    }
+
+        .artist-search input {
+            min-width: 0;
+        }
+
+        .artist-search button {
+            padding: 15px 18px;
+        }
+
+    .artist-image {
+        height: 300px;
+    }
+
+    .artist-content {
+        padding: 25px;
+    }
+
+        .artist-content h2 {
+            font-size: 26px;
+        }
+
+    .artist-details-link {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* =========================================
+   ARTIST PLACEHOLDER IMAGE
+   ========================================= */
+
+.artist-placeholder {
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(135deg, #e8e0d5, #cfc3b5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #6f665c;
+    text-align: center;
+}
+
+    .artist-placeholder span {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    .artist-placeholder small {
+        margin-top: 8px;
+        font-size: 13px;
+    }
+
+/* =========================================
+   ARTIST PLACEHOLDERS
+   ========================================= */
+
+.artist-placeholder {
+    width: 100%;
+    height: 320px;
+    background: #e8e2da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777067;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.artist-detail-placeholder {
+    width: 100%;
+    height: 500px;
+    background: #e8e2da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777067;
+    font-size: 15px;
+}
+
+.map-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .map-container iframe {
+        width: 100%;
+        height: 400px;
+        border: 0;
+    }
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.museum-logo {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================================
+   ARTWORKS PAGE
+   ========================================= */
+
+.artworks-page {
+    background: #f7f4ef;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+.artworks-header {
+    background: #2f3b32;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+    .artworks-header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .artworks-header p {
+        max-width: 750px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+
+/* SECTION */
+
+.artworks-section {
+    padding: 70px 20px;
+}
+
+    .artworks-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+/* GRID */
+
+.artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* CARD */
+
+.artwork-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .artwork-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+    }
+
+
+/* IMAGE */
+
+.artwork-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+    .artwork-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+
+.artwork-card:hover .artwork-image img {
+    transform: scale(1.04);
+}
+
+
+/* CONTENT */
+
+.artwork-content {
+    padding: 30px;
+}
+
+.artwork-number {
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.artwork-content h2 {
+    font-size: 1.8rem;
+    margin: 0 0 8px;
+    color: #26332b;
+}
+
+.artwork-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7a6652;
+    margin-bottom: 20px;
+}
+
+.artwork-content p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* BUTTON */
+
+.artwork-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background: #2f3b32;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+    .artwork-button:hover {
+        background: #7a6652;
+        color: white;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 1000px) {
+
+    .artworks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .artworks-header {
+        padding: 60px 20px;
+    }
+
+        .artworks-header h1 {
+            font-size: 2.2rem;
+        }
+
+    .artworks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artwork-image {
+        height: 280px;
+    }
+}
+
+/* =========================================
+   ARTWORKS PAGE
+   ========================================= */
+
+.artworks-page {
+    padding: 80px 0;
+    background: #f7f3ed;
+    min-height: 100vh;
+}
+
+.artworks-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+    .artworks-header span {
+        display: block;
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .artworks-header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .artworks-header p {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+.artworks-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.artwork-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .artwork-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+.artwork-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: #e9e4dc;
+}
+
+    .artwork-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+    .image-placeholder span {
+        font-size: 3rem;
+    }
+
+.artwork-content {
+    padding: 25px;
+}
+
+    .artwork-content h2 {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+    }
+
+.artist-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.artwork-year {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.artwork-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .artworks-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .artworks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artworks-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* =========================================
+   ARTWORK PAGE
+   ========================================= */
+
+.artwork-heading {
+    background: #7b2d26;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+    .artwork-heading .artwork-eyebrow {
+        display: block;
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        opacity: 0.9;
+    }
+
+    .artwork-heading h1 {
+        margin: 0 0 15px;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .artwork-heading p {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+
+/* =========================================
+   COLLECTION
+   ========================================= */
+
+.artwork-section {
+    padding: 70px 20px;
+    background: #f7f4ef;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.artwork-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .artwork-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+    }
+
+
+/* =========================================
+   IMAGE
+   ========================================= */
+
+.artwork-image {
+    width: 100%;
+    height: 320px;
+    background: #e8e2d9;
+    overflow: hidden;
+}
+
+    .artwork-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.artwork-content {
+    padding: 28px;
+}
+
+.artwork-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #7b2d26;
+    margin-bottom: 10px;
+}
+
+.artwork-content h2 {
+    margin: 0 0 8px;
+    color: #222;
+    font-size: 1.5rem;
+}
+
+.artwork-content h4 {
+    margin: 0 0 10px;
+    color: #666;
+    font-weight: 500;
+}
+
+.artwork-content p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.artwork-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #7b2d26;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+    .artwork-button:hover {
+        background: #5d211c;
+        color: white;
+    }
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .artwork-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .artwork-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artwork-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .artwork-image {
+        height: 280px;
+    }
+}

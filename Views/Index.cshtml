@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Multimedia";
+}
+
+<div class="multimedia-page">
+
+    <!-- Page Header -->
+    <section class="multimedia-header">
+        <div class="container text-center">
+            <p class="section-label">DISCOVER & LEARN</p>
+            <h1>Multimedia</h1>
+            <p>
+                Explore videos, virtual experiences and educational content
+                that bring the stories of Iziko Museums to life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section class="featured-video-section">
+        <div class="container">
+
+            <div class="section-title">
+                <p class="section-label">FEATURED</p>
+                <h2>Explore Our Museum</h2>
+            </div>
+
+            <div class="featured-video">
+
+                <div class="video-placeholder">
+                    <div class="play-button">
+                        ▶
+                    </div>
+
+                    <div class="video-placeholder-text">
+                        <h3>Discover Iziko Museums</h3>
+                        <p>Watch our featured museum experience</p>
+                    </div>
+                </div>
+
+                <div class="featured-video-content">
+                    <p class="section-label">FEATURED EXPERIENCE</p>
+
+                    <h2>Discover South African Heritage</h2>
+
+                    <p>
+                        Take a digital journey through South African art,
+                        culture, history and heritage. Discover the stories
+                        behind the collections and learn more about the
+                        people and artists represented in the museum.
+                    </p>
+
+                    <button class="museum-button" onclick="showVideoMessage()">
+                        Watch Video
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Multimedia Cards -->
+    <section class="multimedia-content">
+        <div class="container">
+
+            <div class="section-title text-center">
+                <p class="section-label">WATCH & EXPLORE</p>
+                <h2>Digital Experiences</h2>
+                <p>
+                    Choose from our collection of educational multimedia.
+                </p>
+            </div>
+
+            <div class="multimedia-grid">
+
+                <!-- Video 1 -->
+                <div class="multimedia-card">
+
+                    <div class="media-image media-one">
+                        <div class="media-play">▶</div>
+                    </div>
+
+                    <div class="multimedia-card-content">
+                        <span class="media-category">MUSEUM TOUR</span>
+
+                        <h3>Explore Iziko Museums</h3>
+
+                        <p>
+                            Discover the museum spaces and learn about
+                            the collections available to visitors.
+                        </p>
+
+                        <button class="media-button" onclick="showVideoMessage()">
+                            Watch Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Video 2 -->
+                <div class="multimedia-card">
+
+                    <div class="media-image media-two">
+                        <div class="media-play">▶</div>
+                    </div>
+
+                    <div class="multimedia-card-content">
+                        <span class="media-category">ART & CULTURE</span>
+
+                        <h3>Understanding South African Art</h3>
+
+                        <p>
+                            Learn about South African artistic traditions
+                            and the stories represented through artworks.
+                        </p>
+
+                        <button class="media-button" onclick="showVideoMessage()">
+                            Watch Now
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Video 3 -->
+                <div class="multimedia-card">
+
+                    <div class="media-image media-three">
+                        <div class="media-play">▶</div>
+                    </div>
+
+                    <div class="multimedia-card-content">
+                        <span class="media-category">EDUCATION</span>
+
+                        <h3>Learn Through the Collection</h3>
+
+                        <p>
+                            Explore educational content designed to help
+                            visitors understand museum collections.
+                        </p>
+
+                        <button class="media-button" onclick="showVideoMessage()">
+                            Watch Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="qr-section">
+        <div class="container">
+            <div class="qr-content">
+
+                <div>
+                    <p class="section-label">INTERACTIVE EXPERIENCE</p>
+
+                    <h2>Scan & Discover</h2>
+
+                    <p>
+                        Scan QR codes around the museum to access additional
+                        information, artwork details and multimedia content
+                        from your device.
+                    </p>
+
+                    <a asp-controller="Artworks"
+                       asp-action="Index"
+                       class="museum-button">
+                        Explore Artworks
+                    </a>
+                </div>
+
+                <div class="qr-placeholder">
+                    <div class="qr-pattern">
+                        QR
+                    </div>
+                    <p>SCAN TO DISCOVER</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    function showVideoMessage() {
+        alert("The video will be available here when the museum multimedia content is added.");
+    }
+</script>

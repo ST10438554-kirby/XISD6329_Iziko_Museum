@@ -1,0 +1,103 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="account-page">
+
+    <div class="account-container">
+
+        <div class="account-header">
+
+            <p class="account-label">
+                IZIKO MUSEUMS
+            </p>
+
+            <h1>Welcome Back</h1>
+
+            <p>
+                Login to access your account, favourites
+                and personalised museum experience.
+            </p>
+
+        </div>
+
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="account-error">
+                @ViewBag.Error
+            </div>
+        }
+
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="account-success">
+                @TempData["Success"]
+            </div>
+        }
+
+
+        <form asp-controller="Account"
+              asp-action="Login"
+              method="post"
+              class="account-form">
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required />
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Enter your password"
+                       required />
+
+            </div>
+
+
+            <button type="submit"
+                    class="account-button">
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <div class="account-footer">
+
+            <p>
+                Don't have an account?
+            </p>
+
+            <a asp-controller="Account"
+               asp-action="Register">
+
+                Create an account
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
